@@ -64,8 +64,8 @@ int main()
     for (Node* cur = start; cur != NULL; cur = cur->next)
     {
         sum += cur->data;
-        arif = sum / count;
     }
+    arif = sum / count;
     for (Node* cur = start; cur != NULL; cur = cur->next)
     {
         if (cur->data > arif)
