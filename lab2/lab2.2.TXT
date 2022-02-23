@@ -1,0 +1,105 @@
+#include<iostream>
+
+struct Node
+{
+    Node* next;
+    double data;
+};
+
+void ANode(Node*& start, Node*& current, double data)
+{
+    if (start == NULL)
+    {
+        current = (start = new Node);
+    }
+    else
+    {
+        current = (current->next = new Node);
+    }
+    current->next = NULL;
+    current->data = data;
+}
+
+void PList(Node* start)
+{
+    std::cout << "List: " << '\n';
+    for (Node* i = start; i; i = i->next)
+    {
+        std::cout << i->data << " ";
+    }
+    std::cout << std::endl;
+}
+
+void DList(Node* start)
+{
+    Node* tmp;
+    for (Node* i = start; i; i = tmp)
+    {
+        tmp = i->next;
+        delete i;
+    }
+}
+
+void specialInsert(Node*& head, double num) {
+    if (head == NULL) {
+        return;
+    }
+
+    Node* before_ptr = NULL;
+
+    for (Node* cur = head; cur != NULL; cur = cur->next)
+    {
+
+        if (cur->data > 10.0) {
+            Node* temp = cur;
+            Node* newNode = new Node;
+            newNode->data = num;
+            newNode->next = cur;
+
+            if (before_ptr != NULL) {
+                before_ptr->next = newNode;
+            }
+            else {
+                head = newNode;
+            }
+        }
+        before_ptr = cur;
+    }
+
+    return;
+}
+
+int main()
+{
+    int count = 0;
+    double sum = 0;
+    Node* start = NULL;
+    Node* current;
+    double data{}, number{};
+
+    while (true)
+    {
+
+        if (sum >= -23.0)
+        {
+            std::cout << "Print " << count + 1 << " element: ";
+            std::cin >> data;
+
+            if (data < 0) sum += data;
+
+            count++;
+
+            ANode(start, current, data);
+
+        }
+        else break;
+    }
+    PList(start);
+
+    std::cout << "Enter special number = ";
+    std::cin >> number;
+    specialInsert(start, number);
+    PList(start);
+    DList(start);
+    return 0;
+}

@@ -1,0 +1,105 @@
+#include<iostream>
+
+struct Node
+{
+    Node* next;
+    int data;
+};
+
+void ANode(Node*& start, Node*& current, int data)
+{
+    if (start == NULL)
+    {
+        current = (start = new Node);
+    }
+    else
+    {
+        current = (current->next = new Node);
+    }
+    current->next = NULL;
+    current->data = data;
+}
+
+void PList(Node* start)
+{
+    int c = 0;
+    std::cout << "List: " << '\n';
+    for (Node* i = start; i; i = i->next)
+    {
+        std::cout << i->data << " ";
+    }
+    std::cout << std::endl;
+}
+
+void DList(Node* start)
+{
+    Node* tmp;
+    for (Node* i = start; i; i = tmp)
+    {
+        tmp = i->next;
+        delete i;
+    }
+}
+
+void specialDelete(Node* &head) {
+    if (head == NULL) {
+        return;
+    }
+
+    Node* before_ptr = NULL;
+
+    for (Node* cur = head; cur != NULL; )
+    {
+        
+        if (cur->data < 5) {
+            Node* temp = cur;
+            if (before_ptr!=NULL) {
+                before_ptr->next = cur->next;
+                cur = cur->next;
+                delete temp;
+            }
+            else {
+                head = cur->next;
+                cur = cur->next;
+                delete temp;
+            }
+        }
+        else {
+            before_ptr = cur;
+            cur = cur->next;
+        }
+    }
+
+    return;
+}
+
+int main()
+{
+    int count = 0;
+    Node* start = NULL;
+    Node* current;
+    int data{};
+
+    while (true)
+    {
+        
+        if (count < 3)
+        {
+            std::cout << "Print " << count + 1 << " element: ";
+            std::cin >> data;
+
+            if (data < 0) {
+                count++;
+            }
+
+            ANode(start, current, data);
+
+        }
+        else break;
+    }
+    PList(start);
+    specialDelete(start);
+    PList(start);
+    DList(start);
+    return 0;
+}
