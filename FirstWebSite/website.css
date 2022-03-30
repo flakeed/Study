@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500");
+.frame-1 {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 767px;
+    overflow: hidden;
+    width: 1366px;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.overlap-group {
+    height: 792px;
+    position: relative;
+    width: 1366px;
+}
+
+.color {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    left: 109px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 15px;
+    width: 137px;
+}
+
+.win-the-world {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-weight: 300;
+    left: 917px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 53px;
+    width: 303px;
+}
+
+.mask-group {
+    height: 742px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1366px;
+}
+
+.rectangle-4 {
+    background-color: #c4c4c4;
+    height: 541px;
+    left: 33px;
+    position: absolute;
+    top: 201px;
+    width: 1288px;
+}
+
+.rectangle-3 {
+    height: 621px;
+    left: 33px;
+    position: absolute;
+    top: 139px;
+    width: 1288px;
+}
+
+.think-big {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    left: 690px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 50px;
+    width: 335px;
+}
+
+.flow {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+    left: 246px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 53px;
+    width: 97px;
+}
+
+.rectangle-2 {
+    background-color: #292727;
+    height: 25px;
+    width: 1366px;
+}
+
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --white: rgba(255, 255, 255, 1);
+    --font-size-m: 47px;
+    --font-size-l: 50px;
+    --font-size-xl: 55px;
+    --font-family-roboto: "Roboto";
+}
+
+
+/*next*/
+
+.overlap-group2 {
+    align-self: flex-end;
+    height: 70px;
+    margin-left: 385px;
+    position: relative;
+    width: 512px;
+}
+
+.think-big {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    position: absolute;
+    top: 0;
+    width: 335px;
+}
+
+.win-the-world {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-weight: 300;
+    left: 209px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 3px;
+    width: 303px;
+}
+
+.overlap-group1 {
+    height: 711px;
+    margin-top: 16px;
+    position: relative;
+    width: 1289px;
+}
+
+.products {
+    left: 540px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 12px;
+    width: 104px;
+}
+
+.rectangle-4 {
+    background-color: #c4c4c4;
+    height: 651px;
+    left: 1px;
+    position: absolute;
+    top: 54px;
+    width: 1288px;
+}
+
+.jksjfdnkg-nrkg54ning {
+    left: 858px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 176px;
+    width: 250px;
+}
+
+.jfdmgj-kdfngjknf-dks {
+    left: 40px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 176px;
+    width: 578px;
+}
+
+.jfdnkg-nrkg54ninginf {
+    left: 858px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 264px;
+    width: 250px;
+}
+
+.jfdmgj-kdfngjknf-dks-1 {
+    left: 28px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 418px;
+    width: 578px;
+}
+
+.contacts {
+    left: 669px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 12px;
+    width: 109px;
+}
+
+.image-6 {
+    height: 66px;
+    left: 764px;
+    object-fit: cover;
+    position: absolute;
+    top: 274px;
+    width: 58px;
+}
+
+.jksjfdnkg-nrkg54ning-1 {
+    left: 946px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 508px;
+    width: 250px;
+}
+
+.featured-services {
+    height: 32px;
+    left: 96px;
+    position: absolute;
+    top: 370px;
+    width: 301px;
+}
+
+.place {
+    left: 71px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 12px;
+    width: 63px;
+}
+
+.image-4 {
+    height: 87px;
+    left: 752px;
+    object-fit: cover;
+    position: absolute;
+    top: 508px;
+    width: 148px;
+}
+
+.image-2 {
+    height: 87px;
+    left: 752px;
+    object-fit: cover;
+    position: absolute;
+    top: 404px;
+    width: 148px;
+}
+
+.rectangle-3 {
+    height: 711px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1288px;
+}
+
+.image-7 {
+    height: 66px;
+    left: 764px;
+    object-fit: cover;
+    position: absolute;
+    top: 188px;
+    width: 58px;
+}
+
+.solutions {
+    height: 32px;
+    left: 964px;
+    position: absolute;
+    top: 354px;
+    width: 156px;
+}
+
+.image-1 {
+    height: 85px;
+    left: 14px;
+    object-fit: cover;
+    position: absolute;
+    top: 464px;
+    width: 604px;
+}
+
+.solutions-1 {
+    left: 405px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 12px;
+}
+
+.welcome {
+    height: 32px;
+    left: 76px;
+    position: absolute;
+    top: 110px;
+    width: 153px;
+}
+
+.company {
+    left: 167px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 12px;
+    width: 94px;
+}
+
+.latest-news {
+    height: 32px;
+    left: 936px;
+    position: absolute;
+    top: 110px;
+    width: 212px;
+}
+
+.jksjfdnkg-nrkg54ning-2 {
+    left: 946px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 404px;
+    width: 250px;
+}
+
+.services {
+    left: 286px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 12px;
+    width: 94px;
+}
+
+.rectangle-2 {
+    background-color: #292727;
+    height: 25px;
+    margin-left: -10px;
+    width: 1376px;
+}
