@@ -1,3 +1,4 @@
+//stacks and queue task#12
 #include <iostream>
 #include <stack>
 #include <queue>
