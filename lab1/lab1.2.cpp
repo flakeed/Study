@@ -75,5 +75,6 @@ int main()
     }
     std::cout << "\nCounting of elements whis bigger thnn arifmetic element in these list: " << k;
     DList(start);
+
     return 0;
 }
